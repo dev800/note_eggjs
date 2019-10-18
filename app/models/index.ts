@@ -32,7 +32,9 @@ Object.keys(db).forEach(modelName => {
   }
 });
 
+/* tslint:disable:no-string-literal */
 db['sequelize'] = sequelize;
 db['Sequelize'] = Sequelize;
+/* tslint:enable:no-string-literal */
 
 module.exports = db;

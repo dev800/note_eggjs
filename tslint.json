@@ -1,9 +1,10 @@
 {
   "extends": [
-    "tslint-eslint-rules"
+    "tslint-config-egg"
   ],
   "rules": {
     "no-require-imports": false,
+    "no-var-requires": false,
     "quotemark": [
       true,
       "single",
