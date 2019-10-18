@@ -1,3 +1,13 @@
 {
-  "extends": ["tslint-config-egg"]
+  "extends": [
+    "tslint-eslint-rules"
+  ],
+  "rules": {
+    "no-require-imports": false,
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ]
+  }
 }
