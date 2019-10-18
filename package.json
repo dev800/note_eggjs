@@ -13,10 +13,10 @@
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test-local": "egg-bin test",
-    "test": "npm run lint -- --fix && npm run test-local",
+    "test": "yarn run lint -- --fix && yarn run test-local",
     "cov": "egg-bin cov",
     "tsc": "ets && tsc -p tsconfig.json",
-    "ci": "npm run lint && npm run cov && npm run tsc",
+    "ci": "yarn run lint && yarn run cov && yarn run tsc",
     "autod": "autod",
     "lint": "tslint --project . -c tslint.json",
     "clean": "ets clean"
