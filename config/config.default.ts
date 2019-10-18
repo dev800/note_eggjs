@@ -4,6 +4,7 @@ export default (appInfo: EggAppInfo) => {
   const config = {} as PowerPartial<EggAppConfig>;
 
   config.view = {
+    defaultViewEngine: 'nunjucks',
     mapping: {
       '.ejs': 'ejs',
       '.nj': 'nunjucks',

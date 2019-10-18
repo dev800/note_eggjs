@@ -1,0 +1,2 @@
+- [ ] 搭建基础note_eggjs框架
+- [ ] 搭建gql的server框架
