@@ -8,18 +8,18 @@ export default appInfo => {
 
   config.logrotator = {
     filesRotateBySize: [
-      path.join(appInfo.root, 'logs', appInfo.name, 'prod', 'egg-web.log'),
+      path.join(appInfo.root, 'logs', appInfo.name, 'test', 'egg-web.log'),
     ],
     maxFileSize: 2 * 1024 * 1024 * 1024,
   };
 
   config.logger = {
-    consoleLevel: 'DEBUG',
+    consoleLevel: 'WARN',
     level: 'DEBUG',
   };
 
   // PostgresSQL
-  config.sequelize = require(__dirname + '/database.json').production;
+  config.sequelize = require(__dirname + '/database.json').test;
 
   return config;
 };
